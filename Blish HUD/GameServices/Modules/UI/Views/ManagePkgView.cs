@@ -11,7 +11,7 @@ using Blish_HUD.Modules.Pkgs;
 using Blish_HUD.Modules.UI.Presenters;
 using Microsoft.Scripting.Utils;
 using Microsoft.Xna.Framework;
-using Version = SemVer.Version;
+using Version = SemanticVersioning.Version;
 
 namespace Blish_HUD.Modules.UI.Views {
 

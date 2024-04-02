@@ -2,8 +2,8 @@
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
-using Range = SemVer.Range;
-using Version = SemVer.Version;
+using Range = SemanticVersioning.Range;
+using Version = SemanticVersioning.Version;
 
 namespace Blish_HUD.Modules {
 

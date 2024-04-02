@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Blish_HUD.Graphics.UI;
 using Blish_HUD.Modules.Pkgs;
 using Blish_HUD.Modules.UI.Views;
-using Version = SemVer.Version;
+using Version = SemanticVersioning.Version;
 
 namespace Blish_HUD.Modules.UI.Presenters {
     public class ManagePkgPresenter : Presenter<ManagePkgView, IGrouping<string, PkgManifest>> {

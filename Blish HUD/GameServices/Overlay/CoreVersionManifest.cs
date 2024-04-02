@@ -1,5 +1,5 @@
 ﻿using Newtonsoft.Json;
-using Version = SemVer.Version;
+using Version = SemanticVersioning.Version;
 
 namespace Blish_HUD.Overlay {
     public struct CoreVersionManifest {

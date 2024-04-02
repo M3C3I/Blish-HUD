@@ -5,7 +5,7 @@ using Blish_HUD.Controls;
 using Blish_HUD.Graphics.UI;
 using Blish_HUD.Modules.UI.Presenters;
 using Microsoft.Xna.Framework;
-using Version = SemVer.Version;
+using Version = SemanticVersioning.Version;
 
 namespace Blish_HUD.Modules.UI.Views {
     public class ManageModuleView : View {

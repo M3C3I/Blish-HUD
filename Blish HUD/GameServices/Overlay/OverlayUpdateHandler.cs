@@ -19,15 +19,15 @@ namespace Blish_HUD.Overlay {
 
         private CoreVersionManifest[] _availableUpdates = Array.Empty<CoreVersionManifest>();
 
-        private SettingEntry<SemVer.Version> _lastAcknowledgedUpdate;
+        private SettingEntry<SemanticVersioning.Version> _lastAcknowledgedUpdate;
         private SettingEntry<bool>           _notifyOfNewReleases;
 
         private int _releaseLoadAttemptsRemaining = 3;
 
         /// <summary>
-        /// The last update <see cref="SemVer.Version"/> that was acknowledged by the user.
+        /// The last update <see cref="SemanticVersioning.Version"/> that was acknowledged by the user.
         /// </summary>
-        public SemVer.Version LastAcknowledgedRelease {
+        public SemanticVersioning.Version LastAcknowledgedRelease {
             get => _lastAcknowledgedUpdate.Value;
             set => _lastAcknowledgedUpdate.Value = value;
         }
@@ -54,7 +54,7 @@ namespace Blish_HUD.Overlay {
         }
 
         private void DefineOverlayUpdateSettings(SettingCollection settingCollection) {
-            _lastAcknowledgedUpdate = settingCollection.DefineSetting(nameof(this.LastAcknowledgedRelease), new SemVer.Version("0.0.0"));
+            _lastAcknowledgedUpdate = settingCollection.DefineSetting(nameof(this.LastAcknowledgedRelease), new SemanticVersioning.Version("0.0.0"));
             _notifyOfNewReleases    = settingCollection.DefineSetting(nameof(this.NotifyOfNewRelease),      true);
         }
 

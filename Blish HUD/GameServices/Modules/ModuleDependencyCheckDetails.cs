@@ -1,4 +1,4 @@
-﻿using SemVer;
+﻿using SemanticVersioning;
 
 namespace Blish_HUD.Modules {
     public struct ModuleDependencyCheckDetails {

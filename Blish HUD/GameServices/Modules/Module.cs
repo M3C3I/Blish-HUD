@@ -75,7 +75,7 @@ namespace Blish_HUD.Modules {
 
         public string Namespace => ModuleParameters.Manifest.Namespace;
 
-        public SemVer.Version Version => ModuleParameters.Manifest.Version;
+        public SemanticVersioning.Version Version => ModuleParameters.Manifest.Version;
 
         #endregion
 
